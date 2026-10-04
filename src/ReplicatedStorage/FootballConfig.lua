@@ -1,0 +1,161 @@
+local FootballConfig = {}
+
+FootballConfig.OWNER_NAME = "BLOXD_IO_YT_ZAY"
+FootballConfig.FREE_AGENT_NAME = "Free Agent"
+FootballConfig.MatchLength = 180
+FootballConfig.MatchHalfLength = 90
+
+FootballConfig.Teams = {
+    {
+        Name = "PSG",
+        ShortName = "PSG",
+        PrimaryColor = Color3.fromRGB(35, 68, 175),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(35, 68, 175),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(40, 72, 185),
+            Leggings = Color3.fromRGB(25, 40, 100),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Barcelona",
+        ShortName = "Barca",
+        PrimaryColor = Color3.fromRGB(0, 102, 255),
+        SecondaryColor = Color3.fromRGB(219, 0, 43),
+        Kit = {
+            Shirt = Color3.fromRGB(0, 102, 255),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(0, 102, 255),
+            Leggings = Color3.fromRGB(20, 20, 20),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Real Madrid",
+        ShortName = "Madrid",
+        PrimaryColor = Color3.fromRGB(255, 255, 255),
+        SecondaryColor = Color3.fromRGB(0, 0, 0),
+        Kit = {
+            Shirt = Color3.fromRGB(255, 255, 255),
+            Shorts = Color3.fromRGB(0, 0, 0),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(35, 35, 35),
+            Armor = Color3.fromRGB(255, 255, 255),
+            Leggings = Color3.fromRGB(25, 25, 25),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Al Nassr",
+        ShortName = "Nassr",
+        PrimaryColor = Color3.fromRGB(255, 160, 0),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(255, 160, 0),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(255, 160, 0),
+            Leggings = Color3.fromRGB(110, 59, 0),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Al Hilala",
+        ShortName = "Hilala",
+        PrimaryColor = Color3.fromRGB(0, 153, 76),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(0, 153, 76),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(0, 153, 76),
+            Leggings = Color3.fromRGB(8, 70, 35),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Manchester City",
+        ShortName = "City",
+        PrimaryColor = Color3.fromRGB(67, 122, 255),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(67, 122, 255),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(67, 122, 255),
+            Leggings = Color3.fromRGB(25, 25, 50),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Bayern Munich",
+        ShortName = "Bayern",
+        PrimaryColor = Color3.fromRGB(212, 16, 26),
+        SecondaryColor = Color3.fromRGB(255, 206, 0),
+        Kit = {
+            Shirt = Color3.fromRGB(212, 16, 26),
+            Shorts = Color3.fromRGB(255, 206, 0),
+            Socks = Color3.fromRGB(255, 206, 0),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(207, 19, 29),
+            Leggings = Color3.fromRGB(80, 20, 15),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Liverpool",
+        ShortName = "Lpool",
+        PrimaryColor = Color3.fromRGB(196, 17, 53),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(196, 17, 53),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(196, 17, 53),
+            Leggings = Color3.fromRGB(65, 0, 25),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Juventus",
+        ShortName = "Juve",
+        PrimaryColor = Color3.fromRGB(255, 255, 255),
+        SecondaryColor = Color3.fromRGB(190, 190, 190),
+        Kit = {
+            Shirt = Color3.fromRGB(255, 255, 255),
+            Shorts = Color3.fromRGB(190, 190, 190),
+            Socks = Color3.fromRGB(190, 190, 190),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(255, 255, 255),
+            Leggings = Color3.fromRGB(60, 60, 60),
+        },
+        Roster = {},
+    },
+    {
+        Name = "Inter Milan",
+        ShortName = "Inter",
+        PrimaryColor = Color3.fromRGB(255, 0, 0),
+        SecondaryColor = Color3.fromRGB(255, 255, 255),
+        Kit = {
+            Shirt = Color3.fromRGB(255, 0, 0),
+            Shorts = Color3.fromRGB(255, 255, 255),
+            Socks = Color3.fromRGB(255, 255, 255),
+            Boots = Color3.fromRGB(18, 18, 18),
+            Armor = Color3.fromRGB(255, 0, 0),
+            Leggings = Color3.fromRGB(75, 0, 0),
+        },
+        Roster = {},
+    },
+}
+
+return FootballConfig
